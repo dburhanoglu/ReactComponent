@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Mevsimler from './Mevsimler';
+import Renkler from './Renkler';
+import Shape from './Shape';
+//tüm komponentleri buraya ekleyip ieriğindeki verileri ekliyoruz
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <Mevsimler
+     title = "Seasons"
+     mevsimler = {["Summer","Spring","Winter"]}
+   />
+   <Renkler
+   title="Colors Table"
+   renkler ={["Pink","Blue","Purple"]} />
     </div>
   );
 }
